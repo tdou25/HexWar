@@ -1,0 +1,68 @@
+# ---------- OS / editors ----------
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# ---------- Unity (project: "Battle of Hexagrad") ----------
+# Keep: Assets/, Packages/manifest.json, Packages/packages-lock.json, ProjectSettings/ (and every .meta file)
+[Ll]ibrary/
+[Tt]emp/
+[Ll]ogs/
+[Oo]bj/
+[Uu]serSettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Builds
+[Bb]uild/
+[Bb]uilds/
+*.app
+*.apk
+*.aab
+*.unitypackage
+*_BackUpThisFolder_ButDontShipItWithYourGame/
+*_BurstDebugInformation_DoNotShip/
+
+# Generated IDE project files (Unity regenerates them)
+*.csproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.pidb
+*.booproj
+
+# Crash / profiler dumps
+sysinfo.txt
+crashlytics-build.properties
+*.pdb
+*.mdb
+
+# ---------- C# tools (Tools/Headless, Tools/Server) ----------
+# (*.csproj above would also hide these two, so re-include them)
+!Tools/Headless/Headless.csproj
+!Tools/Server/Server.csproj
+Tools/**/bin/
+Tools/**/obj/
+
+# ---------- Python (python/) ----------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+hexwarvenv/
+venv/
+.venv/
+*.egg-info/
+
+# Training outputs: checkpoints, CSVs, plots, TensorBoard logs
+python/runs/
+runs/
+results/
+summaries/
+*.pt
+*.onnx
+
+# Exported policy copied into Unity (regenerate with python/export_policy.py)
+Battle of Hexagrad/Assets/StreamingAssets/policy.bytes
+Battle of Hexagrad/Assets/StreamingAssets/policy.bytes.meta

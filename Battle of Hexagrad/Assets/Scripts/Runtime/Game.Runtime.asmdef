@@ -1,0 +1,5 @@
+{
+  "name": "Game.Runtime",
+  "rootNamespace": "HexWar.Play",
+  "references": [ "Game.Core" ]
+}

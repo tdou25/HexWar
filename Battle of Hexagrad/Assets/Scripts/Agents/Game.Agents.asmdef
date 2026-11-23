@@ -1,0 +1,9 @@
+{
+  "name": "Game.Agents",
+  "rootNamespace": "HexWar.Agents",
+  "references": [ "Game.Core", "Game.Runtime", "Unity.ML-Agents" ],
+  "defineConstraints": [ "HEXWAR_MLAGENTS" ],
+  "versionDefines": [
+    { "name": "com.unity.ml-agents", "expression": "", "define": "HEXWAR_MLAGENTS" }
+  ]
+}
